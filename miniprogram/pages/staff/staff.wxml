@@ -1,0 +1,33 @@
+<!--教工个人中心-->
+<view class="container">
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="/images/name.png" background-size="cover" />
+    <text class="userinfo-nickname">张小三</text>
+    <view class="tonav"></view>
+  </view>
+  
+  <view class="person-list">
+    <view class="list-item" bindtap="userdata">
+      <image class="item-image" src="/images/name.png"></image>
+      <text class="item-text">我的资料</text>
+    </view>
+    <view class="person-line"></view>
+
+    <view class="list-item" bindtap="timetable">
+      <image class="item-image" src="/images/course.png"></image>
+      <text class="item-text">个人信息修改</text>
+    </view>
+    <view class="person-line"></view>
+
+    <view class="list-item" bindtap="record">
+      <image class="item-image" src="/images/history.png"></image>
+      <text class="item-text">签到记录</text>
+    </view>
+    <view class="person-line"></view>
+    
+    <view class="list-item" bindtap="toast">
+      <image class="item-image" src="/images/tip.png"></image>
+      <text class="item-text">退出登录</text>
+    </view>
+  </view>
+</view>

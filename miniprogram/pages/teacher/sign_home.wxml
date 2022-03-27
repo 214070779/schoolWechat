@@ -1,0 +1,39 @@
+<!--pages/teacher/sign_home.wxml-->
+<view class="main">
+
+	<view class="header" bindtap='navtoSign'>
+		<view class="btn">
+			<text>发起签到</text>
+		</view>
+	</view>
+
+
+	<view class="maincontent">
+		<view class="box">
+			<view class="head_box">
+				<text>{{title}}</text>
+				<text>{{sign_status}}</text>
+			</view>
+
+			<view class="item">
+				<text>签到类型</text>
+				<text class="type">{{type}}</text>
+			</view>
+
+      <view class="link-top"></view>
+
+			<view class="item2">
+				<view class="left">
+					<view class="signpart">签到环节</view>
+				</view>
+
+				<view class="right">
+					<view wx:for="{{signList}}" wx:for-item="item" wx:for-index="index" class="rightpart" wx:key="act">
+						<view class="activity">{{item.activity}}</view>
+						<view class="act_status" bindtap="navtoInfo" id="{{index}}">{{item.status}}</view>
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,64 @@
+<!--pages/teacher/sign_result.wxml-->
+
+<view class="main">
+
+	<view class="header" bindtap='navtoSign'>
+		<view class="btn2">
+			<button size="mini">导出结果</button>
+		</view>
+		<view class="btn">
+			<text>发起签到</text>
+		</view>
+	</view>
+
+	<view class="datainfo">
+		<view>
+			<text>已签到:</text>
+			<text>5</text>
+		</view>
+		<view>
+			<text>已签到:</text>
+			<text>5</text>
+		</view>
+		<view>
+			<text>已签到:</text>
+			<text>5</text>
+		</view>
+	</view>
+
+	<view class="swiper-tab">
+		<view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">已签到</view>
+		<view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">未签到</view>
+	</view>
+
+	<swiper current="{{currentTab}}" duration="300" bindchange="swiperTab" class="swiper">
+	<!-- 已签到 -->
+		<swiper-item>
+			<view class="item_box">
+				<view class="user_item" wx:for="{{ userList }}" wx:key="user" wx:for-item="item" wx:for-index="index">
+					<view class="img">
+						<image src="{{item.userpic}}"></image>
+					</view>
+					<view class="info">
+						<view class="title">{{item.name}}</view>
+						<view class="time">{{item.time}}</view>
+					</view>
+				</view>
+			</view>
+		</swiper-item>
+<!-- 未签到 -->
+		<swiper-item>
+			<view>
+				<view class="user_item" wx:for="{{ unsignUserList }}" wx:key="user" wx:for-item="item" wx:for-index="index">
+					<view class="img">
+						<image src="{{item.userpic}}"></image>
+					</view>
+					<view class="info">
+						<view class="title">{{item.name}}</view>
+						<view class="time">{{item.time}}</view>
+					</view>
+				</view>
+			</view>
+		</swiper-item>
+	</swiper>
+</view>

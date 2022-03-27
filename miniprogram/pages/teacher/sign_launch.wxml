@@ -1,0 +1,53 @@
+<!--pages/teacher/sign_launch.wxml-->
+<view>
+	<form>
+		<view class="item">
+			<input name="title" class="input" placeholder="签到标题" value="{{title}}" />
+		</view>
+
+		<view class="item">
+			<input class="input" placeholder="签到说明" value="{{desc}}" />
+		</view>
+
+		<view class="item mod">
+			<text>签到类型</text>
+			<picker bindchange="bindTypeChange" value="{{typeIndex}}" range="{{types}}">
+				<view class="value" name="types">{{types[typeIndex]}}
+					<image class="arrow-r" src="../../images/arrow-r-0.png"></image>
+				</view>
+			</picker>
+		</view>
+
+		<view class="item mod">
+			<text>签到环节</text>
+			<picker bindchange="bindActivityChange" value="{{activityIndex}}" range="{{activities}}">
+				<view class="value" name="types">{{activities[activityIndex]}}
+					<image class="arrow-r" src="../../images/arrow-r-0.png"></image>
+				</view>
+			</picker>
+		</view>
+
+		<view class="item">
+			<input name="title" class="input" placeholder="签到环节的时间要求" value="{{time_req}}" />
+		</view>
+
+		<!-- 有效时间 -->
+		<view class="item">
+			<text class="key">时间</text>
+			<picker mode="date" value="{{date}}" start="{{date}}" end="2020-09-01" bindchange="bindDateChange">
+				<view class="value" name="endtime">{{date}}
+					<image class="arrow-r" src="../../images/arrow-r-0.png"></image>
+				</view>
+			</picker>
+		</view>
+
+		<view class="item">
+			<view class="section__title">时间选择器</view>
+			<picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+				<view class="picker">
+					当前选择: {{time}}
+				</view>
+			</picker>
+		</view>
+	</form>
+</view>

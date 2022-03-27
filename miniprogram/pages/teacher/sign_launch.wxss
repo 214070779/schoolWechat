@@ -1,0 +1,33 @@
+/* pages/teacher/sign_launch.wxss */
+.item {
+  display: flex;
+  justify-content: space-between;
+  /* flex-direction: row;
+  justify-content: space-between;
+  align-items: center; */
+  height: 90rpx;
+  padding: 0 20rpx;
+  border-bottom: 1px solid #f0f0f0;
+  align-items: center;
+}
+
+.arrow-r{
+  width: 9rpx;
+  height: 17rpx;
+  margin-left: 10rpx;
+}
+
+.mod{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 90rpx;
+  padding: 0 20rpx;
+}
+
+.t-sign-time .value{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

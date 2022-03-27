@@ -1,0 +1,52 @@
+<view class="Box">
+	<view class="weui-cells weui-cells_after-title">
+		<view class="weui-cell weui-cell_active">
+			<view class="weui-cell__hd">
+				<view class="weui-flex">
+					<view class="weui-flex__item">
+						<view class="placeholder" style="color:red;width:5vw;">*</view>
+					</view>
+					<view class="weui-flex__item">
+						<view class="placeholder" style="width:20vw;">姓名</view>
+					</view>
+				</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" value="{{stu.name}}" bind:input="onName" placeholder="请输入姓名" />
+			</view>
+		</view>
+		<view class="weui-cell weui-cell_active">
+			<view class="weui-cell__hd">
+				<view class="weui-flex">
+					<view class="weui-flex__item">
+						<view class="placeholder" style="color:red;width:5vw;">*</view>
+					</view>
+					<view class="weui-flex__item">
+						<view class="placeholder" style="width:20vw;">专业</view>
+					</view>
+				</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" value="{{stu.profession}}" bind:input="onProfession" placeholder="请输入专业" />
+			</view>
+		</view>
+		<view class="weui-cell weui-cell_active">
+			<view class="weui-cell__hd">
+				<view class="weui-flex">
+					<view class="weui-flex__item">
+						<view class="placeholder" style="color:red;width:5vw;">*</view>
+					</view>
+					<view class="weui-flex__item">
+						<view class="placeholder" style="width:20vw;">班级</view>
+					</view>
+				</view>
+			</view>
+			<view class="weui-cell__bd">
+				<input class="weui-input" value="{{stu.class}}" bind:input="onClass" placeholder="请输入班级" />
+			</view>
+		</view>
+	</view>
+	<view class="weui-btn-area">
+		<button class="weui-btn" type="primary" bindtap="showTopTips">下一步</button>
+	</view>
+</view>

@@ -1,0 +1,66 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/staff/staff",
+    "pages/uncheck/uncheck",
+    "pages/detail/detail",
+    "pages/total/total",
+    "pages/location_check_in/location_check_in",
+    "pages/teacher/sign_home",
+    "pages/teacher/sign_result",
+    "pages/teacher/sign_info",
+    "pages/teacher/sign_my",
+    "pages/changeInfomation/changeInfomation"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "电机校园",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-image": "@vant/weapp/image/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-transition": "@vant/weapp/transition/index",
+    "van-grid": "@vant/weapp/grid/index",
+    "van-swipe-cell": "@vant/weapp/swipe-cell/index",
+    "van-empty": "@vant/weapp/empty/index",
+    "van-grid-item": "@vant/weapp/grid-item/index",
+    "van-notify": "@vant/weapp/notify/index",
+    "van-switch": "@vant/weapp/switch/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-panel": "@vant/weapp/panel/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-sticky": "@vant/weapp/sticky/index",
+    "van-loading": "@vant/weapp/loading/index",
+    "van-dropdown-menu": "@vant/weapp/dropdown-menu/index",
+    "van-dropdown-item": "@vant/weapp/dropdown-item/index"
+  },
+  "tabBar": {
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "black",
+    "selectedColor": "#FD6801",
+    "color": "#B1B1B1",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icons/tab-bar/index_off.png",
+        "selectedIconPath": "images/icons/tab-bar/index_on.png"
+      },
+      {
+        "pagePath": "pages/staff/staff",
+        "text": "个人",
+        "iconPath": "images/icons/tab-bar/my_off.png",
+        "selectedIconPath": "images/icons/tab-bar/my_on.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

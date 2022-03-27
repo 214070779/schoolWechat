@@ -1,0 +1,91 @@
+/* pages/teacher/sign_home.wxss */
+.main {
+  text-align: center;
+}
+.header {
+  display: flex;
+  justify-content: center;
+}
+.btn {
+  border-radius: 50%;
+  width: 300rpx;
+  height: 300rpx;
+  background: #41D178;
+  text-align: center;
+  line-height: 300rpx;
+  color: white;
+  font-size: 50rpx;
+}
+
+.link-top {
+  width: 100%;
+  height: 1px;
+  border-top: solid #ACC0D8 1px;
+}
+
+.maincontent {
+  display: flex;
+  justify-content: center;
+  margin-top: 40rpx;
+  min-height: 400rpx;
+}
+
+.box {
+  width: 90%;
+  border-radius: 40px 40rpx 40rpx 40rpx ; 
+  box-shadow: 0 0 20rpx 4rpx #bdcee0;
+}
+
+.head_box {
+  border-radius: 40rpx 40rpx 0 0 ; 
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #F82727;
+  color: white;
+  font-size: 40rpx;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 80rpx;
+  padding-right: 50rpx;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.type {
+  margin-right: 160rpx;
+}
+
+.item2 {
+  margin-top: 20rpx;
+  display: flex;
+  /* justify-content: space-around; */
+  padding-left: 40rpx;
+  padding-right: 20rpx;
+}
+
+.right {
+ margin-left: 134rpx; 
+ width: 54%;
+}
+
+.rightpart {
+  display: flex;
+  margin-bottom: 20rpx;
+  /* justify-content: space-between; */
+}
+
+.act_status {
+  width: 45%;
+  text-align: center;
+  margin-left: 15rpx;
+}
+
+
+
